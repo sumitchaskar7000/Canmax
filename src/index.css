@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #4a7c59;
+  --secondary-color: #f0ad4e;
+  --accent-color: #3a5a40;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+.font-marathi {
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#4a7c59] text-white font-semibold py-2 px-4 rounded-md hover:bg-[#3a5a40] transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-[#f0ad4e] text-white font-semibold py-2 px-4 rounded-md hover:bg-[#ec971f] transition-colors;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-[#3a5a40] mb-6;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-[1.02];
+  }
+}
