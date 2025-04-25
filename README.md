@@ -1,4 +1,4 @@
-# Canmax - Agriculture Products Website
+# Canmax - Agriculture Products Website  [CanmaxIndia.com](https://canmaxindia.com/)
 
 A modern, responsive React website for Canmax, an agriculture-based company that showcases agricultural products, blog content, and educational resources for farmers.
 
